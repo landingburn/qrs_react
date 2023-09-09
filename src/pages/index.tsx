@@ -1,12 +1,12 @@
 
 
 import * as React from "react";
-import { Box, Text, Center, Flex, Stack, Button, useBreakpointValue, Grid,Image, Divider } from "@chakra-ui/react";
+import { Box, Text, Center, Flex, Stack, Button, useBreakpointValue, Grid,Image, Divider, Icon } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import CountdownTimer from "@/components/countdown";
 import { useSetRecoilState } from "recoil";
 import {refAccommodationState, refHomeState, refOrganizerState, refPreviousState, refProgramState, refRegistrationState, refSpeakerState, refSponsorState, refTopicState } from "@/atoms/refState";
-
+import {MdWavingHand} from "react-icons/md"
 export default function Home() {
   const flexDirection = useBreakpointValue({ base: "column", lg: "row" });
   const numColumns = useBreakpointValue({ base: 4, md: 3, lg: 4 });
@@ -30,6 +30,9 @@ export default function Home() {
   const talks = [
     "TBA", "TBA", "TBA", "'Photoinduced Molecular Dynamics Mediated by Conical Intersections'", "TBA", "TBA", "'Max Born and the founders of quantum collision theory'", "TBA", "TBA", "TBA", "TBA", "TBA","'Quantum control of resonance lifetimes in molecular photodissociation using intense laser fields'",  "TBA", "TBA", "'Unimolecular chemical processes upon (multi)-photon ionization: theory and experiment'", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA", "TBA","TBA","TBA", "TBA","TBA",  "TBA",
     ]
+    const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
+      ref?.current?.scrollIntoView({ behavior: 'smooth' });
+    };
   /*
   */
   // For example, if the target date is December 31, 2023
@@ -137,8 +140,8 @@ const targetDate = new Date('June 24, 2024 00:00:00');
   </Stack>
 </Grid>
         <Flex my="5" direction={{base:"column", lg:"row"}}>
-          <Button mx="5" width="200px" my="3" height="50px" fontSize="xxl">Register Now</Button>
-          <Button mx="5" my="3" variant="outline" width="200px" height="50px" fontSize="xxl">Organizers</Button>
+          <Button mx="5" width="200px" my="3" height="50px" fontSize="xxl" onClick={() => scrollToRef(refReg)}>Register Now</Button>
+          <Button mx="5" my="3" variant="outline" width="200px" height="50px" fontSize="xxl" onClick={() => scrollToRef(refOrg)}>Organizers</Button>
         </Flex>
       </Center>
         {/* ... (your existing text code) */}
@@ -237,7 +240,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         </Center>
         
       </Box>
-      <Box position="relative" mb={{base:"150", sm:"20"}} //height="100vh"
+      <Box position="relative" mb={{base:"0", sm:"20"}} //height="100vh"
       >
         {/* Low opacity background image */}
         <Box
@@ -252,7 +255,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         ></Box>
 
         {/* Content */}
-        <Center flexDirection="column" position="relative" top="5" left="0" width="100%" //height="100%" 
+        <Center flexDirection="column" position="relative" top="0" left="0" width="100%" //height="100%" 
         zIndex="1" p="10%">
           <Text
             fontWeight="medium"
@@ -409,7 +412,62 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           </Grid>
           
         </Center>
+        <Divider mt="40px"/>
+      </Box>
+      <Box position="relative" mb="170px" height="100vh">
+        {/* Low opacity background image */}
+        <Box
+          position="absolute"
+          width="100%"
+          height="100%"
+          backgroundImage='url("/images/qm3.jpeg")'
+          backgroundSize='cover'
+          backgroundPosition='center'
+          style={{ filter: 'grayscale(40%)' }}
+          opacity="0.3"
+          zIndex="0"
+        ></Box>
+
+        {/* Content */}
+        <Center flexDirection="column" position="relative" top="0" left="0" width="100%" height="100%" zIndex="1" p="10%">
+        <Box
+      mb={4}
+      
+      textAlign="center"
+      textShadow="dark-lg"
+    >
+      <Box style={{
+        background: "linear-gradient(to right, rgba(57,155,255,1), rgba(238,113,249,1))",
+        WebkitBackgroundClip: "text",
+        color: "transparent"
+      }} fontSize={["6vw", "6vw", "5vw", "4vw"]} as="span" fontWeight="extrabold" textShadow="dark-lg">
+        ORGANIZERS
+      </Box><br/>
+      QRS 2024 is organized by Murat Kılıç & Niyazi Bulut
+    </Box>
+
+    {/* Organizer Image and Text */}
+    <Flex 
+      direction="column"
+      width={["90%", "70%", "50%", "40%"]}
+      rounded="xl"
+      overflow="hidden"
+      align="center"
+      mb="40px"
+    >
+      <Box
+        width="100%"
+        paddingBottom="100%"
+        backgroundImage='url("/images/speakers/murat_niyazi3.png")'
+        backgroundSize='cover'
+        backgroundPosition='center'
+        position="relative"
+      >
         
+      </Box>
+    </Flex>
+        </Center>
+        <Divider mt="40px"/>
       </Box>
       <Box  position="relative" height="100vh" ref={refAcc} mb="235">
         {/* Low opacity background image */}
@@ -468,7 +526,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
   />
 
   {/* "Hover to reveal" text */}
-  <Text 
+  <Box 
     position="absolute"
     top="40%" 
     left="50%" 
@@ -483,8 +541,8 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
     zIndex="2" 
     color="black"
   >
-    Hover to reveal
-  </Text>
+    <Icon as={MdWavingHand} size="15"/>
+  </Box>
 
   {/* The details text */}
   <VStack 
@@ -536,7 +594,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
   />
 
   {/* "Hover to reveal" text */}
-  <Text 
+  <Box 
     position="absolute"
     top="40%" 
     left="50%" 
@@ -551,8 +609,8 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
     zIndex="2" 
     color="black"
   >
-    Hover to reveal
-  </Text>
+    <Icon as={MdWavingHand} size="15"/>
+  </Box>
 
   {/* The details text */}
   <VStack 
@@ -573,6 +631,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
       We're finalizing 3 distinct hotel options (5, 3, and 2 stars) to suit different budgets. All are located near the workshop for attendees' convenience. Details will be provided soon.
     </Text>
   </VStack>
+  
 </Stack>
 
 
@@ -586,6 +645,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         
       </Box>
       <Box position="relative"  ref={refSpeaker} mb="105">
+      <Divider mb ="40px" mt="40px"/> 
         {/* Low opacity background image */}
         <Box
           position="absolute"
@@ -643,7 +703,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           </Grid>
           
         </Center>
-        
+        <Divider mt="40px" />
       </Box>
       <Box position="relative" mb="100" ref={refPrev}>
         {/* Low opacity background image */}
@@ -804,7 +864,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         </Stack>
 
         </Center>
-        
+        <Divider mt="40px" />
       </Box>
       <Box position="relative" ref={refProgram}>
         {/* Low opacity background image */}
@@ -839,7 +899,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           </Box>
           <Schedule />
         </Center>
-        
+        <Divider mt="40px" />
       </Box>
       <Box position="relative" ref={refReg}>
         {/* Low opacity background image */}
@@ -876,6 +936,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         </Center>
         
       </Box>
+      
     </Box>
   );
 }
