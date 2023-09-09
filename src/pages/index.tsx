@@ -428,7 +428,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           position="absolute"
           width="100%"
           height="100%"
-          backgroundImage='url("/images/Gradient.png")'
+          backgroundImage='url("/images/banner/Gradient.png")'
           backgroundSize='cover'
           backgroundPosition='center'
           style={{ filter: 'grayscale(40%)' }}
@@ -991,7 +991,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
 >
     <Box 
         borderRadius="full"
-        bgImage="/images/logo/gaussian-w.jpeg" 
+        bgImage="/images/logos/gaussian-w.jpeg" 
          h={["60px","70px","90px", "110px" ,"130px"]}
         w={["100px","120px","160px","200px","240px"]} 
         bgSize="cover" 
@@ -1006,7 +1006,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
          borderRadius="full"
         h={["60px","70px","90px", "110px" ,"130px"]}
         w={["100px","120px","160px","200px","240px"]}
-        bgImage="/images/logo/tkd-w.jpeg" 
+        bgImage="/images/logos/tkd-w.jpeg" 
         bgPosition="center"
         
         bgSize="cover" 
@@ -1019,21 +1019,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
     />
     <Box 
          borderRadius="full"
-        bgImage="/images/logo/truba-w.jpeg" 
-        bgPosition="center"
-        h={["60px","70px","90px", "110px" ,"130px"]}
-        w={["100px","120px","160px","200px","240px"]}
-        bgSize="cover" 
-        
-        bgBlendMode="screen" 
-        transition="transform 1s"  // smooth transition for transform properties
-    _hover={{ 
-        transform: "scale(1.5)"  // scale the box on hover
-    }}
-    />
-    <Box 
-         borderRadius="full"
-        bgImage="/images/logo/ytu-w.jpeg" 
+        bgImage="/images/logos/truba-w.jpeg" 
         bgPosition="center"
         h={["60px","70px","90px", "110px" ,"130px"]}
         w={["100px","120px","160px","200px","240px"]}
@@ -1047,7 +1033,21 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
     />
     <Box 
          borderRadius="full"
-        bgImage="/images/logo/turkishair-w.jpeg" 
+        bgImage="/images/logos/ytu-w.jpeg" 
+        bgPosition="center"
+        h={["60px","70px","90px", "110px" ,"130px"]}
+        w={["100px","120px","160px","200px","240px"]}
+        bgSize="cover" 
+        
+        bgBlendMode="screen" 
+        transition="transform 1s"  // smooth transition for transform properties
+    _hover={{ 
+        transform: "scale(1.5)"  // scale the box on hover
+    }}
+    />
+    <Box 
+         borderRadius="full"
+        bgImage="/images/logos/turkishair-w.jpeg" 
         bgPosition="center"
         h={["60px","70px","90px", "110px" ,"130px"]}
         w={["100px","120px","160px","200px","240px"]}
