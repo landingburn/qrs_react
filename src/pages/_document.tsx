@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="/qrs.ico" />
+          <link rel="icon" href="/qrs2.ico" />
         </Head>
         <body>
           <Main />

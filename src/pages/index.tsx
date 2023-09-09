@@ -237,7 +237,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         </Center>
         
       </Box>
-      <Box position="relative" //height="100vh"
+      <Box position="relative" mb={{base:"150", sm:"20"}} //height="100vh"
       >
         {/* Low opacity background image */}
         <Box
@@ -411,7 +411,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         </Center>
         
       </Box>
-      <Box mt="10" position="relative" height="100vh" ref={refAcc} mb="155">
+      <Box  position="relative" height="100vh" ref={refAcc} mb="235">
         {/* Low opacity background image */}
         <Box
           position="absolute"
@@ -452,7 +452,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
   borderRadius="10" 
   border="4px"
   backgroundPosition='center' 
-  height={["380px", "340px", "270px", "230px"]}  
+  height={["520px", "480px", "420px", "300px"]}  
   width={["300px", "380px", "560px", "700px", "900px"]}
   _hover={{ "& > .hoverText": { opacity: 0, transform: 'translate(-50%, -60%)' }, "& > .detailsText": { opacity: 1 }, transition: "4s" }}
 >
@@ -520,7 +520,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
   borderRadius="10" 
   border="4px"
   backgroundPosition='center' 
-  height={["310px","260px", "210px", "200px"]}   
+  height={["410px","360px", "310px", "300px"]}   
   width={["300px","380px", "560px", "700px", "900px"]}
   _hover={{ "& > .hoverText": { opacity: 0, transform: 'translate(-50%, -60%)' }, "& > .detailsText": { opacity: 1 }, transition: "4s" }}
 >
@@ -1518,22 +1518,23 @@ const RegistrationFee: React.FC = () => {
         alignItems="flex-start" // Align items to the start
       >
         {/* Column Template Function */}
-        {['Early Bird', 'Regular', 'On-Site'].map((title, index) => (
+        {['Student', 'Regular', 'Accompany'].map((title, index) => (
           <>
             <VStack spacing={4} align="start" width="100%">
               <Text fontSize="xl" fontWeight="bold" color="white" textAlign="center">
                 {title}
               </Text>
               <Text fontSize="3xl" color={index === 0 ? 'green.500' : index === 1 ? 'blue.500' : 'red.500'} textAlign="center">
-                {['$399', '$499', '$599'][index]}
+                {['250€', '650€', '450€'][index]}
               </Text>
               <VStack spacing={2} align="start" width="100%">
-                {index === 0 && <Text color="gray.300">Register before Aug 15th</Text>}
-                {index === 1 && <Text color="gray.300">Register between Aug 16th - Sep 30th</Text>}
-                {index === 2 && <Text color="gray.300">Register on Oct 1st</Text>}
+                {index === 0 && <Text color="gray.300">2 Starred Hotel</Text>}
+                {index === 1 && <Text color="gray.300">5 Starred Hotel</Text>}
+                {index === 2 && <Text color="gray.300">3 Starred Hotel</Text>}
                 <Text color="gray.300">Access to all sessions</Text>
                 <Text color="gray.300">Workshop materials</Text>
                 {index === 1 && <Text color="gray.300">Networking lunch</Text>}
+                {index === 0 && <Text color="gray.300"></Text>}
               </VStack>
             </VStack>
             
