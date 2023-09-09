@@ -93,7 +93,7 @@ const targetDate = new Date('June 24, 2024 00:00:00');
               opacity: "0.5"
             }}
           >
-            <source src="/images/istanbul.mp4" type="video/mp4" />
+            <source src="/static/images/istanbul.mp4" type="video/mp4" />
           </video>
         </Box>
         {/* Text */}
@@ -157,7 +157,7 @@ const targetDate = new Date('June 24, 2024 00:00:00');
           position="absolute"
           width="100%"
           height="100%"
-          backgroundImage='url("/images/qm2.jpeg")'
+          backgroundImage='url("/static/images/qm2.jpeg")'
           backgroundSize='cover'
           backgroundPosition='center'
           style={{ filter: 'grayscale(100%)' }}
@@ -199,7 +199,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           position="absolute"
           width="100%"
           height="100%"
-          backgroundImage='url("/images/banner/istanbul4.jpeg")'
+          backgroundImage='url("/static/images/banner/istanbul4.jpeg")'
           backgroundSize='cover'
           backgroundPosition='center'
           opacity="0.5"
@@ -289,7 +289,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             }}> 🍸 WELCOME RECEPTION</Text>
               <Text>All participants gather for a delightful start at the enchanting welcome reception</Text>
             </Stack>
-            <Stack align="center" backgroundImage='url("/images/banner/reception.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/reception.jpeg")'
           backgroundSize='cover' borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
@@ -303,7 +303,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             }}> 🍽️ GALA DINNER</Text>
               <Text>A memorable gala dinner with delicious food in a delightful atmosphere, overlooking the magnificent Istanbul Bosphorus</Text>
             </Stack>
-            <Stack align="center" backgroundImage='url("/images/banner/gala1.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/gala1.jpeg")'
           backgroundSize='cover'  borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
@@ -317,7 +317,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             }}>🍹 COCKTAIL DURING POSTER PRESENTATION</Text>
               <Text>A memorable gala dinner with delicious food in a delightful atmosphere, overlooking the magnificent Istanbul Bosphorus</Text>
             </Stack>
-            <Stack align="center" backgroundImage='url("/images/banner/cocktail.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/cocktail.jpeg")'
           backgroundSize='cover'  borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
@@ -331,7 +331,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             }}>⛵ 🍹 🐟 Cocktail on a Boat: Bosphorus Tour</Text>
               <Text>Scenic views await: Hagia Sophia, Maiden Tower, Topkapı Palace, Galata Tower, Dolmabahçe Palace, Çırağan, Ortaköy Mosque, Bosphorus Bridge, Beylerbeyi Palace, and Üsküdar during the Bosphorus tour.</Text>
             </Stack>
-            <Stack align="center" backgroundImage='url("/images/banner/istanbul3.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/istanbul3.jpeg")'
           backgroundSize='cover'  borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
@@ -345,7 +345,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             }}>🍴 Lunch & Dinner</Text>
               <Text>Enjoy delicious lunch and dinner options every day of QRS 2024</Text>
             </Stack>
-            <Stack align="center" backgroundImage='url("/images/banner/food.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/food.jpeg")'
           backgroundSize='cover'  borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
@@ -359,7 +359,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             }}>☕ Coffee Break</Text>
               <Text>Refreshing coffee breaks with various Turkish pastries throughout the event.</Text>
             </Stack>
-            <Stack align="center" backgroundImage='url("/images/banner/coffee.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/coffee.jpeg")'
           backgroundSize='cover'  borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
@@ -373,7 +373,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             }}>🚶‍♂️🚶‍♀️ Excursion(s)</Text>
               <Text>Discover the most iconic spots of Istanbul. Stay tuned for further updates and details!</Text>
             </Stack>
-            <Stack align="center" backgroundImage='url("/images/banner/dolmabahce.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/dolmabahce.jpeg")'
           backgroundSize='cover'  borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
@@ -390,25 +390,25 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             </Stack>
             <Grid templateColumns="repeat(2, 1fr)"
             gap={5} >
-            <Stack align="center" backgroundImage='url("/images/banner/mug.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/mug.jpeg")'
           backgroundSize='cover'  borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
               
             </Stack>
-            <Stack align="center" backgroundImage='url("/images/banner/bag.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/bag.jpeg")'
           backgroundSize='cover'  borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
               
             </Stack>
-            <Stack align="center" backgroundImage='url("/images/banner/book.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/book.jpeg")'
           backgroundSize='cover'  borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
               
             </Stack>
-            <Stack align="center" backgroundImage='url("/images/banner/certif.jpeg")'
+            <Stack align="center" backgroundImage='url("/static/images/banner/certif.jpeg")'
           backgroundSize='cover'  borderRadius="10" border="4px"
           backgroundPosition='center' height={["130px","140px", "150px", "160px"]}  >
               
@@ -428,7 +428,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           position="absolute"
           width="100%"
           height="100%"
-          backgroundImage='url("./images/banner/Gradient.png")'
+          backgroundImage='url("/static/images/banner/Gradient.png")'
           backgroundSize='cover'
           backgroundPosition='center'
           style={{ filter: 'grayscale(40%)' }}
@@ -466,7 +466,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
       <Box
         width="100%"
         paddingBottom="100%"
-        backgroundImage='url("/images/speakers/murat_niyazi3.png")'
+        backgroundImage='url("/static/images/speakers/murat_niyazi3.png")'
         backgroundSize='cover'
         backgroundPosition='center'
         position="relative"
@@ -514,7 +514,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             <Stack 
   align="center" 
   position="relative"
-  backgroundImage='url("/images/banner/airlines2.jpeg")' 
+  backgroundImage='url("/static/images/banner/airlines2.jpeg")' 
   cursor="pointer" 
   backgroundSize='cover'  
   borderRadius="10" 
@@ -582,7 +582,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
 <Stack 
   align="center" 
   position="relative"
-  backgroundImage='url("/images/banner/hotel.jpg")' 
+  backgroundImage='url("/static/images/banner/hotel.jpg")' 
   cursor="pointer" 
   backgroundSize='cover'  
   borderRadius="10" 
@@ -710,7 +710,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             mt="3"
           >
             {speakers.map((speaker, index) => (
-              <SpeakerBox key={index} name = {speaker} title = {talks[index]} institute={institute[index]} image = {`/images/speakers/${images[index]}.jpg`}></SpeakerBox>
+              <SpeakerBox key={index} name = {speaker} title = {talks[index]} institute={institute[index]} image = {`/static/images/speakers/${images[index]}.jpg`}></SpeakerBox>
             ))}
           </Grid>
           
@@ -749,7 +749,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             
             >PREVIOUS QRSs<br/></Box> The Quantum Reactive Scattering Workshop is a prestigious series of workshops initiated by David Clary in 1990. Over the years, this workshop has brought together luminaries and experts in the field from around the globe to foster collaboration.
           </Box>
-          <Stack mt="10" height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/cambridge.jpg)`}
+          <Stack mt="10" height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/cambridge.jpg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -757,14 +757,14 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >1. 1990 Cambridge, UK - David Clary</Text>
         </Stack>
-        <Stack height="300px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/massa.jpeg)`}
+        <Stack height="300px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/massa.jpeg)`}
         justify="end"
         //filter="grayscale(100%)"
         bgSize="cover"
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >2. 1994 Cambridge, Massachusetts, USA - Yan Sun and Michael Baer</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/nottingham.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/nottingham.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -772,7 +772,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >3. 1995 Nottingham, UK - David Clary and David Manolopoulos</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/telluride.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/telluride.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -780,7 +780,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >4. 1997 Telluride, Colorado, USA - Joel Bowman</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/perugia.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/perugia.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -788,7 +788,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >5. 1999 Perugia, Italy - Vincenzo Aquilanti and Antonio Laganà</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/pasadena.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/pasadena.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -796,7 +796,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >6. 2001 Pasadena, California, USA - Aron Kuppermann</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/lorenzo.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/lorenzo.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -804,7 +804,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >7. 2003 San Lorenzo de El Escorial, Spain - Javier Aoiz and Luis Bañares</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/santa.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/santa.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -812,7 +812,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >8. 2005 Santa Cruz, California, USA - Millard Alexander and Anne McCoy</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/cambridge.jpg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/cambridge.jpg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -820,7 +820,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >9. 2007 Cambridge, UK - Stuart Althorpe</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/dalian.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/dalian.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -828,7 +828,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >10. 2009 Dalian, China - Dong-Hui Zhang and Ke-Li Han</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/santafe.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/santafe.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -836,7 +836,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >11. 2011 Santa Fe, New Mexico, USA - Hua Guo</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/bordeaux.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/bordeaux.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -844,7 +844,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >12. 2013 Bordeaux, France - Laurent Bonnet and Pascal Larregaray</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/salamanca.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/salamanca.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -852,7 +852,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >13. 2015 Salamanca, Spain - Octavio Roncero, Tomás González-Lezana, Susana Gómez-Carrasco, Lola González-Sánchez</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/trieste.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/trieste.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -860,7 +860,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >14. 2017 Trieste, Italy - Niyazi Bulut, Noelia Faginas Lago, Andrea Lombardi, Federico Palazzetti</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/saitama.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/saitama.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -868,7 +868,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         bgPosition="center">
           <Text textAlign="left" p="5" fontSize={["3.5vw", "3vw", "2.5vw", "2vw"]} >15. 2019 Saitama, Japan - Toshiyuki Takayanagi</Text>
         </Stack>
-        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/images/places/Balaton.jpeg)`}
+        <Stack  height="250px" fontWeight="700" width="100%" bgImage={`linear-gradient(to bottom left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(/static/images/places/Balaton.jpeg)`}
 
         justify="end"
         //filter="grayscale(100%)"
@@ -962,7 +962,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           width="100%"
           height="100%"
           
-          backgroundImage='url("/images/nuclear.jpg")'
+          backgroundImage='url("/static/images/nuclear.jpg")'
           backgroundSize='cover'
           backgroundPosition='center'
           
@@ -991,7 +991,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
 >
     <Box 
         borderRadius="full"
-        bgImage="/images/logos/gaussian-w.jpeg" 
+        bgImage="/static/images/logos/gaussian-w.jpeg" 
          h={["60px","70px","90px", "110px" ,"130px"]}
         w={["100px","120px","160px","200px","240px"]} 
         bgSize="cover" 
@@ -1006,7 +1006,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
          borderRadius="full"
         h={["60px","70px","90px", "110px" ,"130px"]}
         w={["100px","120px","160px","200px","240px"]}
-        bgImage="/images/logos/tkd-w.jpeg" 
+        bgImage="/static/images/logos/tkd-w.jpeg" 
         bgPosition="center"
         
         bgSize="cover" 
@@ -1019,21 +1019,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
     />
     <Box 
          borderRadius="full"
-        bgImage="/images/logos/truba-w.jpeg" 
-        bgPosition="center"
-        h={["60px","70px","90px", "110px" ,"130px"]}
-        w={["100px","120px","160px","200px","240px"]}
-        bgSize="cover" 
-        
-        bgBlendMode="screen" 
-        transition="transform 1s"  // smooth transition for transform properties
-    _hover={{ 
-        transform: "scale(1.5)"  // scale the box on hover
-    }}
-    />
-    <Box 
-         borderRadius="full"
-        bgImage="/images/logos/ytu-w.jpeg" 
+        bgImage="/static/images/logos/truba-w.jpeg" 
         bgPosition="center"
         h={["60px","70px","90px", "110px" ,"130px"]}
         w={["100px","120px","160px","200px","240px"]}
@@ -1047,7 +1033,21 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
     />
     <Box 
          borderRadius="full"
-        bgImage="/images/logos/turkishair-w.jpeg" 
+        bgImage="/static/images/logos/ytu-w.jpeg" 
+        bgPosition="center"
+        h={["60px","70px","90px", "110px" ,"130px"]}
+        w={["100px","120px","160px","200px","240px"]}
+        bgSize="cover" 
+        
+        bgBlendMode="screen" 
+        transition="transform 1s"  // smooth transition for transform properties
+    _hover={{ 
+        transform: "scale(1.5)"  // scale the box on hover
+    }}
+    />
+    <Box 
+         borderRadius="full"
+        bgImage="/static/images/logos/turkishair-w.jpeg" 
         bgPosition="center"
         h={["60px","70px","90px", "110px" ,"130px"]}
         w={["100px","120px","160px","200px","240px"]}
