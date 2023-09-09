@@ -428,7 +428,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           position="absolute"
           width="100%"
           height="100%"
-          backgroundImage='url("/images/banner/Gradient.png")'
+          backgroundImage='url("./images/banner/Gradient.png")'
           backgroundSize='cover'
           backgroundPosition='center'
           style={{ filter: 'grayscale(40%)' }}
