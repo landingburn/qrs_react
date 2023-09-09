@@ -8,6 +8,7 @@ import { SessionProvider } from 'next-auth/react'
 import Layout from '@/layout/Layout'
 import Head from 'next/head'
 import { theme } from '@/chakra/theme'
+
 export default function App({ Component, pageProps:{...pageProps} }: AppProps) {
   return (
     <RecoilRoot>

@@ -4,6 +4,8 @@ import * as React from "react";
 import { Box, Text, Center, Flex, Stack, Button, useBreakpointValue, Grid,Image, Divider, Icon } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import CountdownTimer from "@/components/countdown";
+
+
 import { useSetRecoilState } from "recoil";
 import {refAccommodationState, refHomeState, refOrganizerState, refPreviousState, refProgramState, refRegistrationState, refSpeakerState, refSponsorState, refTopicState } from "@/atoms/refState";
 import {MdWavingHand} from "react-icons/md"
@@ -150,6 +152,7 @@ const targetDate = new Date('June 24, 2024 00:00:00');
       {/* Image below the video */}
       <Box position="relative" height="100vh">
         {/* Low opacity background image */}
+        <Divider />
         <Box
           position="absolute"
           width="100%"
@@ -164,7 +167,8 @@ const targetDate = new Date('June 24, 2024 00:00:00');
 
         {/* Content */}
         <Center flexDirection="column" position="relative" top="0" left="0" width="100%" height="100%" zIndex="1" p="10%">
-          <Text
+          <Box
+          mt="40px"
             fontWeight="medium"
             fontSize={["6vw", "6vw", "5vw", "4vw"]}
             textAlign="center"
@@ -177,7 +181,7 @@ const targetDate = new Date('June 24, 2024 00:00:00');
             <Box as="span" fontWeight="extrabold"
             
             >QUANTUM CHEMISTRY<br/></Box> WITH ISTANBUL VIEWS
-          </Text>
+          </Box>
           <Text fontSize={["3vw", "2vw", "1.5vw", "1vw"]}>
           Welcome to QRS 2024 - 17th Quantum Reactive Scattering Workshop, hosted in the enchanting city of Istanbul. On behalf of the Organizing Committee, we extend a heartfelt welcome to all participants. As we convene in this city renowned for its rich history and the captivating fusion of Asia and Europe, we invite you to embark on a journey that seamlessly blends academic excellence with cultural immersion.<br /><br />
 After a thorough evaluation of Istanbul's myriad options, the QRS 2024 organizing committee identified the <Box as="span" fontWeight="extrabold">Yıldız Campus</Box> as an ideal location. Situated a mere 10-minute walk from various hotels, its historical charm and authentic atmosphere played a pivotal role in influencing this choice.<br /><br />
@@ -190,6 +194,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
       </Box>
       <Box position="relative" height="100vh" ref={refTopic}>
         {/* Low opacity background image */}
+        <Divider />
         <Box
           position="absolute"
           width="100%"
@@ -203,7 +208,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
 
         {/* Content */}
         <Center flexDirection="column" position="relative" top="5" left="0" width="100%" height="100%" zIndex="1" p="10%">
-          <Box
+          <Box 
             fontWeight="medium"
             fontSize={["5vw", "4vw", "4vw", "3vw"]}
             textAlign="center"
@@ -240,8 +245,9 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         </Center>
         
       </Box>
-      <Box position="relative" mb={{base:"0", sm:"20"}} //height="100vh"
+      <Box position="relative"  //height="100vh"
       >
+        <Divider />
         {/* Low opacity background image */}
         <Box
           position="absolute"
@@ -258,6 +264,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         <Center flexDirection="column" position="relative" top="0" left="0" width="100%" //height="100%" 
         zIndex="1" p="10%">
           <Text
+            mt="40px"
             fontWeight="medium"
             fontSize={["5vw", "4vw", "4vw", "3vw"]}
             textAlign="center"
@@ -412,15 +419,16 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           </Grid>
           
         </Center>
-        <Divider mt="40px"/>
+        
       </Box>
-      <Box position="relative" mb="170px" height="100vh">
+      <Box position="relative"  height="100vh" ref={refOrg}>
         {/* Low opacity background image */}
+        <Divider />
         <Box
           position="absolute"
           width="100%"
           height="100%"
-          backgroundImage='url("/images/qm3.jpeg")'
+          backgroundImage='url("/images/Gradient.png")'
           backgroundSize='cover'
           backgroundPosition='center'
           style={{ filter: 'grayscale(40%)' }}
@@ -434,13 +442,13 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
       mb={4}
       
       textAlign="center"
-      textShadow="dark-lg"
+      
     >
       <Box style={{
         background: "linear-gradient(to right, rgba(57,155,255,1), rgba(238,113,249,1))",
         WebkitBackgroundClip: "text",
         color: "transparent"
-      }} fontSize={["6vw", "6vw", "5vw", "4vw"]} as="span" fontWeight="extrabold" textShadow="dark-lg">
+      }} fontSize={["6vw", "6vw", "5vw", "4vw"]} as="span" fontWeight="extrabold">
         ORGANIZERS
       </Box><br/>
       QRS 2024 is organized by Murat Kılıç & Niyazi Bulut
@@ -467,14 +475,15 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
       </Box>
     </Flex>
         </Center>
-        <Divider mt="40px"/>
+        
       </Box>
-      <Box  position="relative" height="100vh" ref={refAcc} mb="235">
+      <Box  position="relative" ref={refAcc} >
         {/* Low opacity background image */}
+        <Divider />
         <Box
           position="absolute"
           width="100%"
-          height="100%"
+          
           /*backgroundImage='url("/images/banner/istanbul2.jpg")'
           backgroundSize='cover'
           backgroundPosition='center'*/
@@ -483,8 +492,9 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         ></Box>
 
         {/* Content */}
-        <Center flexDirection="column" position="relative" top="5" left="0" width="100%" height="100%" zIndex="1" p="10%">
+        <Center flexDirection="column" position="relative" top="0" left="0" width="100%"  zIndex="1" p="10%">
           <Box
+            
             fontWeight="medium"
             fontSize={["5vw", "4vw", "4vw", "3vw"]}
             textAlign="center"
@@ -644,9 +654,10 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         </Center>
         
       </Box>
-      <Box position="relative"  ref={refSpeaker} mb="105">
-      <Divider mb ="40px" mt="40px"/> 
+      <Box position="relative"  ref={refSpeaker} >
+      
         {/* Low opacity background image */}
+        <Divider />
         <Box
           position="absolute"
           width="100%"
@@ -661,6 +672,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         {/* Content */}
         <Center flexDirection="column" position="relative" top="0" left="0" width="100%" zIndex="1" >
           <Box
+          mt="70px"
             fontWeight="medium"
             
             textAlign="center"
@@ -670,7 +682,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
               color: "transparent"
             }}
           >
-            <Box as="span"  fontWeight="extrabold" fontSize={["5vw", "4vw", "4vw", "3vw"]}>SPEAKERS</Box> <br/>(Confirmed)<br/>
+            <Box  as="span"  fontWeight="extrabold" fontSize={["5vw", "4vw", "4vw", "3vw"]}>SPEAKERS</Box> <br/>(Confirmed)<br/>
             <Grid  alignItems="center" justifyContent="center" templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(7, 1fr)" }}
             gap={1}  // set gap between grid items
             >
@@ -703,10 +715,11 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           </Grid>
           
         </Center>
-        <Divider mt="40px" />
+        
       </Box>
-      <Box position="relative" mb="100" ref={refPrev}>
+      <Box position="relative"  ref={refPrev}>
         {/* Low opacity background image */}
+        <Divider />
         <Box
           position="absolute"
           width="100%"
@@ -722,8 +735,9 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         {/* Content */}
         <Center flexDirection="column" position="relative" top="0" left="0" width="100%" zIndex="1" >
           <Box p="10%" py="0"
+
             fontWeight="medium"
-            
+            mt="70px"
             textAlign="center"
             style={{
               background: "linear-gradient(to right, rgba(57,155,255,1), rgba(238,113,249,1))",
@@ -864,9 +878,10 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         </Stack>
 
         </Center>
-        <Divider mt="40px" />
+        
       </Box>
       <Box position="relative" ref={refProgram}>
+      <Divider />
         {/* Low opacity background image */}
         <Box
           position="absolute"
@@ -884,6 +899,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         <Center flexDirection="column" position="relative" top="0" left="0" width="100%" //height="100%" 
         zIndex="1" p="10%">
           <Box
+          
             fontWeight="medium"
             fontSize={["6vw", "6vw", "5vw", "4vw"]}
             textAlign="center"
@@ -903,6 +919,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
       </Box>
       <Box position="relative" ref={refReg}>
         {/* Low opacity background image */}
+        <Divider />
         <Box
           position="absolute"
           width="100%"
@@ -919,6 +936,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         <Center flexDirection="column" position="relative" top="0" left="0" width="100%" //height="100%" 
         zIndex="1" p="10%">
           <Box
+         
             fontWeight="medium"
             fontSize={["6vw", "6vw", "5vw", "4vw"]}
             textAlign="center"
@@ -936,10 +954,121 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         </Center>
         
       </Box>
-      
+      <Box position="relative" height="100vh" ref={refSponsor}>
+        
+        <Divider />
+        <Box
+          position="absolute"
+          width="100%"
+          height="100%"
+          
+          backgroundImage='url("/images/nuclear.jpg")'
+          backgroundSize='cover'
+          backgroundPosition='center'
+          
+          opacity="1"
+          zIndex="0"
+        ></Box>
+
+        {/* Content */}
+        <Center flexDirection="column" position="relative" top="0" left="0" width="100%" height="100%" zIndex="1" p="10%">
+          <Box
+            mb="10"
+            fontWeight="medium"
+            fontSize={["8vw", "6vw", "5vw", "4vw"]}
+            textAlign="center"
+          >
+            <Box as="span"  /*style={{
+              background: "linear-gradient(to right, rgba(57,155,255,1), rgba(238,113,249,1))",
+              WebkitBackgroundClip: "text",
+              color: "transparent"
+            }}*/ textShadow="2px 2px 3px rgba(0, 0, 0, 1)" fontWeight="extrabold">SPONSORS</Box> 
+          </Box>
+          <Grid alignItems="center" justifyItems="center" 
+    templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(3, 1fr)" }}
+    gap={7}
+    width="100%"
+>
+    <Box 
+        borderRadius="full"
+        bgImage="/images/logo/gaussian-w.jpeg" 
+         h={["60px","70px","90px", "110px" ,"130px"]}
+        w={["100px","120px","160px","200px","240px"]} 
+        bgSize="cover" 
+        bgPosition="center"
+        bgBlendMode="screen"
+        transition="transform 1s"  // smooth transition for transform properties
+    _hover={{ 
+        transform: "scale(1.5)"  // scale the box on hover
+    }} 
+    />
+    <Box 
+         borderRadius="full"
+        h={["60px","70px","90px", "110px" ,"130px"]}
+        w={["100px","120px","160px","200px","240px"]}
+        bgImage="/images/logo/tkd-w.jpeg" 
+        bgPosition="center"
+        
+        bgSize="cover" 
+        
+        bgBlendMode="screen" 
+        transition="transform 1s"  // smooth transition for transform properties
+    _hover={{ 
+        transform: "scale(1.5)"  // scale the box on hover
+    }}
+    />
+    <Box 
+         borderRadius="full"
+        bgImage="/images/logo/truba-w.jpeg" 
+        bgPosition="center"
+        h={["60px","70px","90px", "110px" ,"130px"]}
+        w={["100px","120px","160px","200px","240px"]}
+        bgSize="cover" 
+        
+        bgBlendMode="screen" 
+        transition="transform 1s"  // smooth transition for transform properties
+    _hover={{ 
+        transform: "scale(1.5)"  // scale the box on hover
+    }}
+    />
+    <Box 
+         borderRadius="full"
+        bgImage="/images/logo/ytu-w.jpeg" 
+        bgPosition="center"
+        h={["60px","70px","90px", "110px" ,"130px"]}
+        w={["100px","120px","160px","200px","240px"]}
+        bgSize="cover" 
+        
+        bgBlendMode="screen" 
+        transition="transform 1s"  // smooth transition for transform properties
+    _hover={{ 
+        transform: "scale(1.5)"  // scale the box on hover
+    }}
+    />
+    <Box 
+         borderRadius="full"
+        bgImage="/images/logo/turkishair-w.jpeg" 
+        bgPosition="center"
+        h={["60px","70px","90px", "110px" ,"130px"]}
+        w={["100px","120px","160px","200px","240px"]}
+        bgSize="cover" 
+        
+        bgBlendMode="screen" 
+        transition="transform 1s"  // smooth transition for transform properties
+    _hover={{ 
+        transform: "scale(1.5)"  // scale the box on hover
+    }}
+    />
+</Grid>
+
+        </Center>
+        
+      </Box>
     </Box>
   );
 }
+
+////END OF HOME PAGE
 interface GradientBorderBoxProps {
   children: ReactNode;
 }
@@ -992,6 +1121,7 @@ const GradientBorderBox: React.FC<GradientBorderBoxProps> = ({ children }) => {
         <Text fontWeight="extrabold" textAlign="center" mt="2"  //color="black" 
         fontSize={["8pt", "11.5pt", "13.5pt", "13.5pt"]} p="2">{children}</Text>
       </Box>
+      
     </Box>
   );
 };
@@ -1047,7 +1177,7 @@ const SpeakerBox: React.FC<SpeakerBoxProps> = ({ title, name, institute, image }
   );
 };
 
-
+//////OTHER COMPONENTS ENDPAGE
 // src/components/Schedule.tsx
 
 // src/components/Schedule.tsx
@@ -1594,6 +1724,9 @@ const RegistrationFee: React.FC = () => {
                 {index === 2 && <Text color="gray.300">3 Starred Hotel</Text>}
                 <Text color="gray.300">Access to all sessions</Text>
                 <Text color="gray.300">Workshop materials</Text>
+                {index===2 && <Text color="gray.300">Accompanying person fee includes:<br/>
+
+🍸 Welcome Reception 🍽️ Gala dinner 🍹🚢 🐟 Cocktail on a Boat🚶‍♂️🚶‍♀️Excursion(s)</Text>}
                 {index === 1 && <Text color="gray.300">Networking lunch</Text>}
                 {index === 0 && <Text color="gray.300"></Text>}
               </VStack>
@@ -1604,6 +1737,36 @@ const RegistrationFee: React.FC = () => {
           </>
         ))}
       </Grid>
+      <Divider mt="10"/>
+      <Stack mt="10" align="center" justify="center">
+      <Text fontWeight="extrabold" style={{
+              background: "linear-gradient(to right, rgba(57,155,255,1), rgba(238,113,249,1))",
+              WebkitBackgroundClip: "text",
+              color: "transparent"
+            }}>
+      REGISTRATION PROCEDURE
+</Text>
+<Text>Registration and payment confirmations will be communicated via email. To ensure a seamless process, each individual registering is required to use a unique email address.</Text>
+      <Flex>
+        <Text p="3" style={{
+              background: "linear-gradient(to right, rgba(57,155,255,1), rgba(238,113,249,1))",
+              WebkitBackgroundClip: "text",
+              color: "transparent"
+            }}>
+        Step 1: Pre-registration
+        <Text color="white" textStyle="italic">To initiate the registration process, click the button below and complete the provided online registration form. [online registration form will be here]</Text>
+        </Text>
+        <Text p= "3" style={{
+              background: "linear-gradient(to right, rgba(57,155,255,1), rgba(238,113,249,1))",
+              WebkitBackgroundClip: "text",
+              color: "transparent"
+            }}>
+        Step 2: Complete Registration:
+        <Text color="white" textStyle="italic">After submitting the pre-registration form, you will receive an email containing a link to finalize your conference registration</Text>
+        </Text>
+      </Flex>
+      </Stack>
+      
     </Box>
   );
 }
