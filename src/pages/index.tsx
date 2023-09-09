@@ -455,25 +455,20 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
     </Box>
 
     {/* Organizer Image and Text */}
-    <Flex 
-      direction="column"
-      width={["90%", "70%", "50%", "40%"]}
-      rounded="xl"
-      overflow="hidden"
-      align="center"
-      mb="40px"
-    >
+    
       <Box
-        width="100%"
-        paddingBottom="100%"
+        height={["250px", "350px", "600px", "700px"]}
+        width={["300px", "500px", "700px", "900px"]}
+      rounded="xl"
         backgroundImage='url("/static/images/speakers/murat_niyazi3.png")'
         backgroundSize='cover'
-        backgroundPosition='center'
-        position="relative"
-      >
         
-      </Box>
-    </Flex>
+        backgroundPosition='center'
+        
+      />
+        
+      
+    
         </Center>
         
       </Box>
