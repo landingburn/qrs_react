@@ -7,6 +7,11 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true
 },
+images: {
+  domains: [
+    'https://qrs-ten.vercel.app',
+  ]
+},
 }
 
 module.exports = nextConfig
