@@ -4,7 +4,7 @@ import * as React from "react";
 import { Box, Text, Center, Flex, Stack, Button, useBreakpointValue, Grid,Image, Divider, Icon } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import CountdownTimer from "@/components/countdown";
-
+import "lazysizes"
 
 import { useSetRecoilState } from "recoil";
 import {refAccommodationState, refHomeState, refOrganizerState, refPreviousState, refProgramState, refRegistrationState, refSpeakerState, refSponsorState, refTopicState } from "@/atoms/refState";
@@ -92,8 +92,9 @@ const targetDate = new Date('June 24, 2024 00:00:00');
               zIndex: "0",
               opacity: "0.5"
             }}
+            
           >
-            <source src="/static/images/istanbul.mp4" type="video/mp4" />
+            <source src="/static/images/istanbul.mp4" type="video/mp4"  />
           </video>
         </Box>
         {/* Text */}
@@ -157,6 +158,7 @@ const targetDate = new Date('June 24, 2024 00:00:00');
           position="absolute"
           width="100%"
           height="100%"
+          
           backgroundImage='url("/static/images/qm2.jpeg")'
           backgroundSize='cover'
           backgroundPosition='center'
@@ -577,7 +579,8 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
 <Stack 
   align="center" 
   position="relative"
-  backgroundImage='url("/static/images/banner/hotel.jpg")' 
+  className="lazyload"
+  data-bg='url("/static/images/banner/hotel.jpg")' 
   cursor="pointer" 
   backgroundSize='cover'  
   borderRadius="10" 
@@ -681,20 +684,20 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
             <Grid  alignItems="center" justifyContent="center" templateColumns={{ base: "repeat(2, 1fr)", sm: "repeat(7, 1fr)" }}
             gap={1}  // set gap between grid items
             >
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f3.svg" alt="CN" height="20px" width="20px" mr="3"/> China:3 </Flex>  
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ff.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Czechia:1   </Flex>
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f7.svg" alt="CZ" height="20px" width="20px" mr="3"/>  France:8   </Flex>
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ea.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Germany:1  </Flex> 
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f0.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Hungary:3   </Flex>
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f9.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Italy:4   </Flex>
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1ef-1f1f5.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Japan:2   </Flex>
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f1.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Poland:3  </Flex> 
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/v/latest/svg/1f1f5-1f1f9.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Portugal:1  </Flex> 
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1ea-1f1f8.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Spain:12   </Flex>
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1f9-1f1fc.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Taiwan:1  </Flex> 
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/v/latest/svg/1f1f9-1f1f3.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Tunisia:1  </Flex> 
-            <Flex align="center" justify="center" ><Image src="https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e7.svg" alt="CZ" height="20px" width="20px" mr="3"/>  United Kingdom:2   </Flex>
-            <Flex align="center" justify="center"><Image src="https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f8.svg" alt="CZ" height="20px" width="20px" mr="3"/>  United States:9</Flex>
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1e8-1f1f3.svg" alt="CN" height="20px" width="20px" mr="3"/> China:3 </Flex>  
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1e8-1f1ff.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Czechia:1   </Flex>
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1eb-1f1f7.svg" alt="CZ" height="20px" width="20px" mr="3"/>  France:8   </Flex>
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1e9-1f1ea.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Germany:1  </Flex> 
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1ed-1f1f0.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Hungary:3   </Flex>
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1ee-1f1f9.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Italy:4   </Flex>
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1ef-1f1f5.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Japan:2   </Flex>
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1f5-1f1f1.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Poland:3  </Flex> 
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/v/latest/svg/1f1f5-1f1f9.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Portugal:1  </Flex> 
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1ea-1f1f8.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Spain:12   </Flex>
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1f9-1f1fc.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Taiwan:1  </Flex> 
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/v/latest/svg/1f1f9-1f1f3.svg" alt="CZ" height="20px" width="20px" mr="3"/>  Tunisia:1  </Flex> 
+            <Flex align="center" justify="center" ><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1ec-1f1e7.svg" alt="CZ" height="20px" width="20px" mr="3"/>  United Kingdom:2   </Flex>
+            <Flex align="center" justify="center"><Image loading="lazy" src="https://twemoji.maxcdn.com/2/svg/1f1fa-1f1f8.svg" alt="CZ" height="20px" width="20px" mr="3"/>  United States:9</Flex>
             </Grid>
           </Box>
           
@@ -957,7 +960,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
           width="100%"
           height="100%"
           
-          backgroundImage='url("/static/images/nuclear.jpg")'
+          bgImage='url("/static/images/nuclear.jpg")'
           backgroundSize='cover'
           backgroundPosition='center'
           
@@ -1130,7 +1133,8 @@ interface SpeakerBoxProps {
 
 const SpeakerBox: React.FC<SpeakerBoxProps> = ({ title, name, institute, image }) => {
   return (
-    <Box //width="200px"
+    <Box //width="200px" 
+    
      height="300px" position="relative" overflow="hidden" rounded="xl" boxShadow="lg" 
      _hover={{
       ".image-background": {
@@ -1144,7 +1148,8 @@ const SpeakerBox: React.FC<SpeakerBoxProps> = ({ title, name, institute, image }
         position="absolute"
         width="100%"
         height="100%"
-        bgImage={`linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(${image})`}
+        
+   bgImage={`linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(${image})`}
         
         filter="grayscale(100%)"
         bgSize="cover"
