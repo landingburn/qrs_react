@@ -579,8 +579,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
 <Stack 
   align="center" 
   position="relative"
-  className="lazyload"
-  data-bg='url("/static/images/banner/hotel.jpg")' 
+  bgImage='url("/static/images/banner/hotel.jpg")' 
   cursor="pointer" 
   backgroundSize='cover'  
   borderRadius="10" 
