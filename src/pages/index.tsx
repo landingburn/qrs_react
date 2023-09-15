@@ -168,7 +168,7 @@ const targetDate = new Date('June 24, 2024 00:00:00');
         ></Box>
 
         {/* Content */}
-        <Center flexDirection="column" position="relative" top="0" left="0" width="100%" height="100%" zIndex="1" p="10%">
+        <Center flexDirection="column" position="relative" top="0" left="0" width="100%" height="100%" zIndex="1" px="10%" py="4%">
           <Box
           mt="40px"
             fontWeight="medium"
@@ -209,7 +209,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         ></Box>
 
         {/* Content */}
-        <Center flexDirection="column" position="relative" top="5" left="0" width="100%" height="100%" zIndex="1" p="10%">
+        <Center flexDirection="column" position="relative" top="5" left="0" width="100%" height="100%" zIndex="1" px="10%" py="4%">
           <Box 
             fontWeight="medium"
             fontSize={["5vw", "4vw", "4vw", "3vw"]}
@@ -264,7 +264,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
 
         {/* Content */}
         <Center flexDirection="column" position="relative" top="0" left="0" width="100%" //height="100%" 
-        zIndex="1" p="10%">
+        zIndex="1" px="10%" py="4%">
           <Text
             mt="40px"
             fontWeight="medium"
@@ -439,7 +439,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         ></Box>
 
         {/* Content */}
-        <Center flexDirection="column" position="relative" top="0" left="0" width="100%" height="100%" zIndex="1" p="10%">
+        <Center flexDirection="column" position="relative" top="0" left="0" width="100%" height="100%" zIndex="1"px="10%" py="4%">
         <Box
       mb={4}
       
@@ -489,7 +489,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         ></Box>
 
         {/* Content */}
-        <Center flexDirection="column" position="relative" top="0" left="0" width="100%"  zIndex="1" p="10%">
+        <Center flexDirection="column" position="relative" top="0" left="0" width="100%"  zIndex="1" px="10%" py="4%">
           <Box
             
             fontWeight="medium"
@@ -894,7 +894,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
 
         {/* Content */}
         <Center flexDirection="column" position="relative" top="0" left="0" width="100%" //height="100%" 
-        zIndex="1" p="10%">
+        zIndex="1" px="10%" py="4%">
           <Box
           
             fontWeight="medium"
@@ -931,7 +931,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
 
         {/* Content */}
         <Center flexDirection="column" position="relative" top="0" left="0" width="100%" //height="100%" 
-        zIndex="1" px="10%">
+        zIndex="1" px="10%" py="4%">
           <Box
          
             fontWeight="medium"
@@ -968,7 +968,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         ></Box>
 
         {/* Content */}
-        <Center flexDirection="column" position="relative" top="0" left="0" width="100%" height="100%" zIndex="1" p="10%">
+        <Center flexDirection="column" position="relative" top="0" left="0" width="100%" height="100%" zIndex="1" px="10%" py="4%">
           <Box
             mb="10"
             fontWeight="medium"
