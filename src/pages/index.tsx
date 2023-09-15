@@ -94,7 +94,7 @@ const targetDate = new Date('June 24, 2024 00:00:00');
             }}
             
           >
-            <source src="/static/images/trimmed.mp4" type="video/mp4"  />
+            <source src="/static/images/istanbul.mp4" type="video/mp4"  />
           </video>
         </Box>
         {/* Text */}
@@ -931,7 +931,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
 
         {/* Content */}
         <Center flexDirection="column" position="relative" top="0" left="0" width="100%" //height="100%" 
-        zIndex="1" p="10%">
+        zIndex="1" px="10%">
           <Box
          
             fontWeight="medium"
