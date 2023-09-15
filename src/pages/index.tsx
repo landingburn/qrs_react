@@ -94,7 +94,7 @@ const targetDate = new Date('June 24, 2024 00:00:00');
             }}
             
           >
-            <source src="/static/images/istanbul.mp4" type="video/mp4"  />
+            <source src="/static/images/trimmed.mp4" type="video/mp4"  />
           </video>
         </Box>
         {/* Text */}
@@ -462,7 +462,7 @@ We ardently anticipate your participation at QRS 2024 in the vibrant city of Ist
         height={["250px", "350px", "600px", "700px"]}
         width={["300px", "500px", "700px", "900px"]}
       rounded="xl"
-        backgroundImage='url("/static/images/speakers/murat_niyazi3.png")'
+        backgroundImage='url("/static/images/speakers/muratniyazi.PNG")'
         backgroundSize='cover'
         
         backgroundPosition='center'
@@ -1710,26 +1710,65 @@ const RegistrationFee: React.FC = () => {
         {/* Column Template Function */}
         {['Student', 'Regular', 'Accompany'].map((title, index) => (
           <>
-            <VStack spacing={4} align="start" width="100%">
-              <Text fontSize="xl" fontWeight="bold" color="white" textAlign="center">
-                {title}
-              </Text>
-              <Text fontSize="3xl" color={index === 0 ? 'green.500' : index === 1 ? 'blue.500' : 'red.500'} textAlign="center">
-                {['250€', '650€', '450€'][index]}
-              </Text>
-              <VStack spacing={2} align="start" width="100%">
-                {index === 0 && <Text color="gray.300">2 Starred Hotel</Text>}
-                {index === 1 && <Text color="gray.300">5 Starred Hotel</Text>}
-                {index === 2 && <Text color="gray.300">3 Starred Hotel</Text>}
-                <Text color="gray.300">Access to all sessions</Text>
-                <Text color="gray.300">Workshop materials</Text>
-                {index===2 && <Text color="gray.300">Accompanying person fee includes:<br/>
-
-🍸 Welcome Reception 🍽️ Gala dinner 🍹🚢 🐟 Cocktail on a Boat🚶‍♂️🚶‍♀️Excursion(s)</Text>}
-                {index === 1 && <Text color="gray.300">Networking lunch</Text>}
-                {index === 0 && <Text color="gray.300"></Text>}
-              </VStack>
-            </VStack>
+            <Box position="relative" width="100%" height={{base:"400px", sm:"600px"}}>
+      <VStack spacing={4} align="start" width="100%">
+        <Text fontSize="xl" fontWeight="bold" color="white" textAlign="center">
+          {title}
+        </Text>
+        <Text 
+          fontSize="5xl" 
+          fontWeight="extrabold"
+          style={{
+            background: index === 0 
+              ? "linear-gradient(to right, rgba(0,178,43,1), rgba(57,155,255,1))" 
+              : index === 1 
+              ? "linear-gradient(to right, rgba(57,155,255,1), rgba(238,113,249,1))" 
+              : "linear-gradient(to right, rgba(178,0,0,1), rgba(255,212,96,1))",
+            WebkitBackgroundClip: "text",
+            color: "transparent"
+          }} 
+          textAlign="center"
+        >
+          {['250€', '650€', '450€'][index]}
+        </Text>
+        <VStack spacing={2} align="start" width="100%">
+          {index === 0 && <Text color="gray.300">2 Starred Hotel</Text>}
+          {index === 1 && <Text color="gray.300">5 Starred Hotel</Text>}
+          {index === 2 && <Text color="gray.300">3 Starred Hotel</Text>}
+          <Text color="gray.300">Access to all sessions</Text>
+          <Text color="gray.300">Workshop materials</Text>
+          {index === 2 && <Text color="gray.300">
+            Accompanying person fee includes:<br/>
+            🍸 Welcome Reception 🍽️ Gala dinner 🍹🚢 🐟 Cocktail on a Boat🚶‍♂️🚶‍♀️Excursion(s)
+          </Text>}
+          {index === 1 && <Text color="gray.300">Networking lunch</Text>}
+          {index === 0 && <Text color="gray.300"></Text>}
+        </VStack>
+        <Button 
+          position="absolute" 
+          top="80%"
+          //bottom="20px" 
+          left="50%" 
+          transform="translateX(-50%)" 
+          //width="200px" 
+          height="50px" 
+          bgGradient={index === 0 
+            ? "linear-gradient(to right, rgba(0,178,43,1), rgba(57,155,255,1))" 
+            : index === 1 
+            ? "linear-gradient(to right, rgba(57,155,255,1), rgba(238,113,249,1))" 
+            : "linear-gradient(to right, rgba(178,0,0,1), rgba(255,212,96,1))"} 
+          _hover={{bgGradient: index === 0 
+            ? "linear-gradient(to left, rgba(0,178,43,1), rgba(57,155,255,1))" 
+            : index === 1 
+            ? "linear-gradient(to left, rgba(57,155,255,1), rgba(238,113,249,1))" 
+            : "linear-gradient(to left, rgba(178,0,0,1), rgba(255,212,96,1))"}}
+          fontSize="xxl"
+          onClick={() => {}}
+        >
+          Register Now
+        </Button>
+      </VStack>
+    </Box>
             
             {layout === 'row' && index !== 2 && <Box w="1px" bg="gray.700" h="100%" />}
             {layout === 'column' && index !== 2 && <Box h="1px" bg="gray.700" w="100%" my={4} />}
